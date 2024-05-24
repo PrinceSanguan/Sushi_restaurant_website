@@ -50,7 +50,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
 
             <li class="nav__item">
@@ -85,7 +85,7 @@
 
         <div class="nav__buttons">
           <!--Theme change button-->
-          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
 
           <!--toggle button-->
           <div class="nav__toggle" id="nav-toggle">
@@ -217,6 +217,44 @@
             </button>
           </article>
           <!--==================== TEMPURA RAMEN ====================-->
+
+          <!--==================== MIX SASHIMI ====================-->
+          <article class="popular__card">
+            <img
+              src="assets/img/popular-sashimi.png"
+              alt="popular image"
+              class="popular__img"
+            />
+
+            <h3 class="popular__name">Mix Sashimi</h3>
+            <span class="popular__description">Japanese Dish</span>
+
+            <span class="popular__price">30 CHF</span>
+
+            <button class="popular__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <!--==================== MIX SASHIMI ====================-->
+
+          <!--==================== POPULAR TUNA POKE ====================-->
+          <article class="popular__card">
+            <img
+              src="assets/img/popular-tunapoke.png"
+              alt="popular image"
+              class="popular__img"
+            />
+
+            <h3 class="popular__name">Tuna Poke</h3>
+            <span class="popular__description">Japanese Dish</span>
+
+            <span class="popular__price">20 CHF</span>
+
+            <button class="popular__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <!--==================== POPULAR TUNA POKE ====================-->
         </div>
       </section>
 
@@ -283,11 +321,16 @@
                 Updates
               </h2>
 
-              <form action="" class="newsletter__form">
+              <form
+                action=""
+                class="newsletter__form"
+                onsubmit="showToast(event)"
+              >
                 <input
                   type="email"
                   placeholder="Enter email"
                   class="newsletter__input"
+                  required
                 />
 
                 <button class="button newsletter__button">
@@ -295,6 +338,10 @@
                 </button>
               </form>
             </div>
+          </div>
+
+          <div id="toast" class="toast">
+            Congratulations! You are already subscribed.
           </div>
 
           <img
@@ -415,7 +462,7 @@
     </a>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
